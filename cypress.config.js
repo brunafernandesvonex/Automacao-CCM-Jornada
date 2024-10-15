@@ -6,7 +6,8 @@ module.exports = defineConfig({
     supportFile: false,
     specPattern: [
       "cypress/e2e/Login/fazerLogin.js",
+      "cypress/e2e/ReceberMensagem/receberMensagem.js",
+      "cypress/e2e/ReceberLigacao/receberLigacao.js",
     ],
   },
 });
-
