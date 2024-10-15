@@ -21,6 +21,10 @@ Cypress.Commands.add('clicarNoBotaoAcionarJornada', () => {
     acoesReceberLigacao.clicarNoBotaoAcionarJornada(); 
 });
 
-Cypress.Commands.add('validarInformacoesDaJornadaReceberLigacaoFluxoEscolherOpcao', () => {
-    acoesReceberLigacao.validarInformacoesDaJornadaReceberLigacaoFluxoEscolherOpcao(); 
+Cypress.Commands.add('validarInformacoesDaJornadaReceberLigacaoFluxoBasicoIAdeConfirmacao', () => {
+    acoesReceberLigacao.validarInformacoesDaJornadaReceberLigacaoFluxoBasicoIAdeConfirmacao(); 
+});
+
+Cypress.Commands.add('validarInformacoesDaJornadaReceberLigacaoFluxoBasicoIAdeClassificacao', () => {
+    acoesReceberLigacao.validarInformacoesDaJornadaReceberLigacaoFluxoBasicoIAdeClassificacao(); 
 });

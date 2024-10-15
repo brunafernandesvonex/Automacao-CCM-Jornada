@@ -12,4 +12,21 @@ describe('Validar fluxo de Receber ligação da automação da Jornada', () => {
         cy.validarInformacoesDaJornadaReceberLigacaoFluxoBasico();
         cy.clicarNoBotaoAcionarJornada();
     });
+    
+    it("Validar fluxo básico de receber ligação da Jornada da IA de confirmação", () => {
+        cy.fazerLogin();
+        cy.acessarJornada();
+        cy.verJornada();
+        cy.validarInformacoesDaJornadaReceberLigacaoFluxoBasicoIAdeConfirmacao();
+        cy.clicarNoBotaoAcionarJornada();
+    });
+
+    it("Validar fluxo básico de receber ligação da Jornada da IA de classificação", () => {
+        cy.fazerLogin();
+        cy.acessarJornada();
+        cy.verJornada();
+        cy.validarInformacoesDaJornadaReceberLigacaoFluxoBasicoIAdeClassificacao();
+        cy.clicarNoBotaoAcionarJornada();
+    });
+   
 });
